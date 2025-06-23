@@ -1,6 +1,8 @@
 package gui;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 
 public class ViewController {
@@ -9,7 +11,9 @@ public class ViewController {
 	
 	@FXML
 	public void onbtTestAction() {
-		System.out.println("Clik");
+		Alerts.showAlert("alert", null, "error", AlertType.ERROR);
 	}
+	
+	
 
 }
